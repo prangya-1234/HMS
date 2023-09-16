@@ -38,7 +38,7 @@ public class BedsController {
 	 @GetMapping("/edit/{id}")
 	 Beds update(@RequestBody Beds newUser, @PathVariable Long id) {
 	        return bedsRepository.findById(id)
-	                .map(user -> {
+	                   .map(user -> {
 	                    user.setName(newUser.getName());
 	                    user.setType(newUser.getType());
 	                    user.setDescription(newUser.getDescription());

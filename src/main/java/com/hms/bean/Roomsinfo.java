@@ -12,7 +12,8 @@ public class Roomsinfo {
 	private String description;
 	
 public Rooms convertToEntity() {
-	Rooms room= new Rooms ();
+	
+	        Rooms room= new Rooms ();
 			if(id!=null  && id!="0")			
 			room.setId(Long.valueOf(id)); 
 			room.setNumber(number); 
@@ -20,5 +21,6 @@ public Rooms convertToEntity() {
 			room.setDescription(description); 
 
 			return room;
+			
 	   }	
 }
